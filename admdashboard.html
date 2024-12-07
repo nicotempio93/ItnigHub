@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Preguntas y Pitches</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/itnig-dark-2.svg" class="imgBlanco" alt="">
+        <h1 class="h1Titulo">Dashboard administrativo</h1>
+    </header>
+    <div class="container">
+        <!-- Columna de Preguntas -->
+        <div class="preguntas">
+            <div class="header-preguntas">
+            <h2>Preguntas</h2>
+            <div class="filtro">
+                <span class="span-filtro">Tema:</span>
+                <select id="tema">
+                    <option value="Marketing">Marketing</option>
+                    <option value="Roles">Roles</option>
+                    <option value="Finanzas">Finanzas</option>
+                    <option value="Producto">Producto</option>
+                    <option value="Sales">Sales</option>
+                </select>
+            </div>
+            </div>
+            <div class="preguntas-section" id="preguntasContainer">
+                
+                <div id="preguntasList"></div>
+                
+            </div>
+
+            <div class="mas-preguntas">
+                <span>Quedan 34 preguntas por leer...</span>
+                <button class="ver-mas">Ver más</button>
+            </div>
+            <!-- Repite las demás preguntas aquí -->
+        </div>
+
+        <!-- Columna Derecha: Nueva Definición y Pitch Manager -->
+        <div class="columna-derecha">
+            <form id="formAgregarDefinicion">
+            <div class="nueva-definicion">
+                <h3>Agregar nueva definición:</h3>
+                <input id="nuevoConceptoTitulo" type="text" placeholder="Título">
+                <textarea id="nuevoConceptoDefinicion" placeholder="Definición"></textarea>
+                <button type="submit" class="agregar">Agregar al diccionario</button>
+            </div>
+        </form>
+
+            <div class="pitch-manager">
+                <h2>Pitch Manager</h2>
+                <div class="pitch">
+                    <span>Genesi AI: Supercharge your sales with quality data and AI.</span>
+                    <div class="rating">10/10</div>
+                    <button class="ver-mas">Ver más</button>
+                </div>
+                <div class="pitch">
+                    <span>Genesi AI: Supercharge your sales with quality data and AI.</span>
+                    <div class="rating">7.7/10</div>
+                    <button class="ver-mas">Ver más</button>
+                </div>
+                <div class="pitch">
+                    <span>Genesi AI: Supercharge your sales with quality data and AI.</span>
+                    <div class="rating">5.9/10</div>
+                    <button class="ver-mas">Ver más</button>
+                </div>
+                <div class="pitch">
+                    <span>Genesi AI: Supercharge your sales with quality data and AI.</span>
+                    <div class="rating">4.3/10</div>
+                    <button class="ver-mas">Ver más</button>
+                </div>
+                <div class="mas-preguntas">
+                    <span>Quedan 4 postulaciones por ver...</span>
+                    <button class="ver-mas">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="admdashboard.js"></script>
+    <script type="module" src="/config.js"></script>
+
+</body>
+</html>
