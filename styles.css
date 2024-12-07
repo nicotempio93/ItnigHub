@@ -46,6 +46,10 @@ header {
     color: #f1c40f;
 }
 
+.navegacion {
+    color: #f1c40f;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
